@@ -12,3 +12,6 @@ jobs:
         run: |
           uname -a
           arch
+          ip addr show
+          free -h 
+          nproc
