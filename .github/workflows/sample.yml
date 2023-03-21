@@ -15,3 +15,15 @@ jobs:
           ip addr show
           free -h 
           nproc
+          
+  power_job:
+    name: Power Job
+    runs-on: ubuntu-latest-ppc64le
+    steps:
+      - name: Run commands
+        run: |
+          uname -a
+          arch
+          ip addr show
+          free -h 
+          nproc
