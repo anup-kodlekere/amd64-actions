@@ -13,9 +13,7 @@ jobs:
           uname -a
           arch
           ip addr show
-          free -h 
-          nproc
-          
+          hostname
   power_job:
     name: Power Job
     runs-on: ubuntu-latest-ppc64le
@@ -23,7 +21,6 @@ jobs:
       - name: Run commands
         run: |
           uname -a
-          arch
+          arch 
           ip addr show
-          free -h 
-          nproc
+          hostname
