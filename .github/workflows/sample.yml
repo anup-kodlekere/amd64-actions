@@ -6,11 +6,8 @@ on: [ workflow_dispatch, push ]
 jobs:
   power_job:
     name: Power Job
-    runs-on: ubuntu-latest-ppc64le
+    runs-on: ubuntu-latest
     steps:
       - name: Run commands
         run: |
-          uname -a
-          arch 
-          ip addr show
-          hostname
+          docker version
