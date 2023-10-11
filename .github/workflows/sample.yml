@@ -4,10 +4,13 @@ on: [ workflow_dispatch, push ]
 
 
 jobs:
-  power_job:
-    name: Power Job
+  test_job:
+    name: Test Job
     runs-on: ubuntu-latest
     steps:
       - name: Run commands
         run: |
-          docker version
+          cat /etc/hosts
+          cat /etc/resolv.conf
+          ip a
+          ip r
